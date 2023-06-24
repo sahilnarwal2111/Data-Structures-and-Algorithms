@@ -1,3 +1,4 @@
+-----------------------------------------   TC- > O(n) SC-> O(n)+ recursion stack
 #include <bits/stdc++.h> 
 int f(int i , vector<int> &nums, vector<int>&dp){
     if(i == 0) return nums[i];
@@ -14,7 +15,7 @@ int maximumNonAdjacentSum(vector<int> &nums){
     return f(nums.size()-1, nums,dp);
 }
 
--------------Tabulation--------------------
+-------------Tabulation--------------------  TC- > O(n) SC-> O(n)
   int maximumNonAdjacentSum(vector<int> &nums){
     // Write your code here.
     vector<int> dp (nums.size(), -1);
@@ -28,7 +29,7 @@ int maximumNonAdjacentSum(vector<int> &nums){
         dp[i] = max(pick, notPick);
     }
     return dp[nums.size()-1];
-------------Space Optimization---------------
+------------Space Optimization--------------- TC- > O(n) SC-> O(1)
   int prev = nums[0];
     int prev2 = 0;
     for(int i = 1 ; i < nums.size(); i++){
