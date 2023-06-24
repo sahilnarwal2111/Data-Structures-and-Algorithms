@@ -1,3 +1,4 @@
+// Note: Whenever two difference jumps are made we can note that it can space optimized as well as time last code refer to most optimized
 import java.util.* ;
 import java.io.*; 
 public class Solution {
