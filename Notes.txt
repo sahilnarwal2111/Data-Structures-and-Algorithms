@@ -1,0 +1,4 @@
+Toggle kth bit : n ^ (1<<(k-1))
+If k’th bit is set for a number: n & (1<<(k-1))
+Turn on k’th bit in a number: n | (1<<(k-1))
+Turn off k’th bit in a number: n & ~(1<<(k-1))
